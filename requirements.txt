@@ -20,6 +20,6 @@ pyparsing==3.0.7
 pytest==7.0.1
 sniffio==1.2.0
 starlette==0.17.1
-tomli==2.0.1
+tomli==1.2.3
 typing_extensions==4.1.1
 uvicorn==0.17.5
