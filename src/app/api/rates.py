@@ -1,9 +1,10 @@
-from fastapi import FastAPI
-
-app = FastAPI()
+from fastapi import APIRouter
 
 
-@app.get("/rates/{char_code}")
+router = APIRouter()
+
+
+@router.get("/rates/{char_code}")
 async def rates(char_code: str):
     return {
         "rates": [
@@ -16,8 +17,3 @@ async def rates(char_code: str):
             }
         ]
     }
-
-
-@app.get("/convert/{source}/{dest}/{value}")
-async def convert():
-    return {"value": 551.88315}
