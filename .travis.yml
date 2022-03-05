@@ -3,4 +3,4 @@ install:
   - pip install -r ./src/requirements.txt
 script:
   - pytest
-  - flake8
+  - flake8 src
