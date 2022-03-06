@@ -27,4 +27,7 @@ async def rates(char_code: str, sort_by: Optional[str] = None, order_by: Optiona
             stmt = stmt.order_by(sort)
 
     response = await database.fetch_all(stmt)
+
+    # TODO: реализовать логику конвертирования
+
     return response
