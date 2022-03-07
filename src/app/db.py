@@ -13,8 +13,7 @@ from sqlalchemy import (
 from databases import Database
 
 
-# DATABASE_URL = os.getenv("DATABASE_URL")
-DATABASE_URL = "sqlite:///my.db"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 engine = create_engine(DATABASE_URL)
 metadata = MetaData()
