@@ -1,0 +1,4 @@
+image: python3.10
+test:
+  before_script: pip install wemake-python-styleguide
+  script: flake8 .
